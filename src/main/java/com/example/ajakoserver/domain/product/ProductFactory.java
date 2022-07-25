@@ -22,10 +22,10 @@ public class ProductFactory {
 	public ProductDto create(Product product){
 		ProductDto productDto = new ProductDto();
 
-		productDto.setDescription(productDto.getDescription());
-		productDto.setName(productDto.getName());
-		productDto.setPrice(productDto.getPrice());
-		productDto.setType(productDto.getType());
+		productDto.setDescription(product.getProductDescription());
+		productDto.setName(product.getProductName());
+		productDto.setPrice(product.getProductPrice());
+		productDto.setType(product.getProductType());
 
 		return productDto;
 	}
